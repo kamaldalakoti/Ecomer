@@ -36,17 +36,17 @@ from django.views.generic.edit import FormMixin
 #     template_name = "index.html"
 
 
-# def signup1(request):
-#     form = UserCreationForm()
-#     if request.method == 'POST':
-#         form = UserCreationForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             print(form)
-#     data = {'form' : form}
-#     return render(request, 'accounts/signup.html',data)    
-# def login(request):
-#     return render(request, 'accounts/login.html' )
+def signup1(request):
+    form = UserCreationForm()
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            print(form)
+    data = {'form' : form}
+    return render(request, 'accounts/signup.html',data)    
+def login(request):
+    return render(request, 'accounts/login.html' )
 # def cart(request):
     
 #     return render(request, 'cart.html')
