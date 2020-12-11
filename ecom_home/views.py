@@ -23,7 +23,7 @@ from .mixins import SellerAccountMixin
 from .models import SellerAccount
 from django.views.generic.edit import FormMixin
 
-Create your views here.
+# Create your views here.
 def index(request):
     context = {
        "products":Products.objects.all()
