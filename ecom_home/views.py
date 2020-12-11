@@ -44,9 +44,9 @@ def signup1(request):
             form.save()
             print(form)
     data = {'form' : form}
-    return render(request, 'accounts/signup.html',data)    
+    return render(request, 'account/signup.html',data)    
 def login(request):
-    return render(request, 'accounts/login.html' )
+    return render(request, 'account/login.html' )
 def cart(request):
     
     return render(request, 'cart.html')
